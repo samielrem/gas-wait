@@ -331,5 +331,22 @@ class EIAClient:
 
     @staticmethod
     def save_raw_json(payload: dict[str, Any], path: str) -> None:
+        """Write an API response without persisting credential fields.
+
+        EIA response metadata can echo the request's ``api_key``. Raw downloads
+        are ignored by Git, but redacting credentials here also makes local
+        archives safer to inspect, copy, or share.
+        """
+        def redact_credentials(value: Any) -> Any:
+            if isinstance(value, dict):
+                return {
+                    key: "[REDACTED]" if key.lower() == "api_key" else redact_credentials(item)
+                    for key, item in value.items()
+                }
+            if isinstance(value, list):
+                return [redact_credentials(item) for item in value]
+            return value
+
+        sanitized = redact_credentials(payload)
         with open(path, "w", encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2)
+            json.dump(sanitized, handle, indent=2)

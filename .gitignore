@@ -1,35 +1,73 @@
-# Environment variables
+# Secrets and local environment files
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
 
-# Matplotlib cache
-.mplconfig/
-
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
+env/
 
-# Python
+# Python caches, builds, and test output
 __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
 
-# macOS
+# Notebook and plotting caches
+.ipynb_checkpoints/
+.mplconfig/
+
+# Editors and local Cursor state
+.idea/
+.vscode/
+.cursor/
+.cursorignore
+*.canvas.tsx
+*.swp
+*.swo
+*~
+
+# OS files
 .DS_Store
+Thumbs.db
 
-# Raw and large data files
+# Raw EIA downloads and generated processed datasets
 gas_wait/data/raw/*
 !gas_wait/data/raw/.gitkeep
-*.csv
-*.tsv
-*.parquet
-*.feather
-*.h5
-*.hdf5
-*.pkl
-*.pickle
-*.joblib
-*.xlsx
-*.xls
+gas_wait/data/processed/*.csv
+gas_wait/data/processed/*.tsv
+gas_wait/data/processed/*.parquet
+gas_wait/data/processed/*.feather
+gas_wait/data/processed/*.h5
+gas_wait/data/processed/*.hdf5
+gas_wait/data/processed/*.xlsx
+gas_wait/data/processed/*.xls
+
+# Generated model binaries (source and documented results remain tracked)
+gas_wait/models/*.pkl
+gas_wait/models/*.pickle
+gas_wait/models/*.joblib
+
+# Temporary files and archives
+*.log
+*.tmp
+*.temp
+*.bak
 *.zip
 *.gz
 *.tar

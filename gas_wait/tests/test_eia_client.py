@@ -145,6 +145,23 @@ class EIAClientTests(unittest.TestCase):
             loaded = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(loaded["response"]["data"][0]["value"], "1.0")
 
+    def test_save_raw_json_redacts_api_keys(self) -> None:
+        payload = {
+            "request": {"params": {"api_key": "test-secret-value"}},
+            "response": {
+                "data": [{"period": "2024-01-01", "value": "1.0"}],
+                "nested": [{"api_key": "another-test-secret"}],
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = Path(tmpdir) / "sample.json"
+            EIAClient.save_raw_json(payload, str(path))
+            loaded = json.loads(path.read_text(encoding="utf-8"))
+
+        self.assertEqual(loaded["request"]["params"]["api_key"], "[REDACTED]")
+        self.assertEqual(loaded["response"]["nested"][0]["api_key"], "[REDACTED]")
+        self.assertEqual(loaded["response"]["data"][0]["value"], "1.0")
+
     def test_clean_dataset_adds_metadata_columns(self) -> None:
         raw_df = pd.DataFrame(
             {
