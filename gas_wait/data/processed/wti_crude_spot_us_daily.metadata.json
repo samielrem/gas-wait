@@ -1,0 +1,35 @@
+{
+  "dataset_id": "wti_crude_spot_us_daily",
+  "name": "WTI Crude Oil Spot Price",
+  "route": "petroleum/pri/spt/data",
+  "frequency": "daily",
+  "facets": {
+    "series": [
+      "RWTC"
+    ]
+  },
+  "geographic_area": "United States (Cushing, OK)",
+  "units": "dollars per barrel",
+  "category": "crude_oil_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.RWTC.D",
+  "description": "Daily WTI crude oil spot price at Cushing, OK. Wholesale benchmark that feeds into gasoline costs.",
+  "eia_series_facet": "RWTC",
+  "observation_count": 10230,
+  "date_range": {
+    "start": "1986-01-02",
+    "end": "2026-08-18"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "frequency_check": {
+    "expected_frequency": "daily",
+    "median_gap_days": 1.0,
+    "pct_gap_le_3_days": 0.9734089353798026,
+    "is_native_frequency": true
+  },
+  "raw_path": "data/raw/wti_crude_spot_us_daily.json",
+  "processed_path": "data/processed/wti_crude_spot_us_daily.csv"
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "retail_gasoline_regular_los_angeles_weekly",
+  "name": "Los Angeles Regular Gasoline Retail Price",
+  "route": "petroleum/pri/gnd/data",
+  "frequency": "weekly",
+  "facets": {
+    "product": [
+      "EPMR"
+    ],
+    "duoarea": [
+      "Y05LA"
+    ],
+    "process": [
+      "PTE"
+    ]
+  },
+  "geographic_area": "Los Angeles, CA",
+  "units": "dollars per gallon",
+  "category": "retail_gasoline_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.EMM_EPMR_PTE_Y05LA_DPG.W",
+  "description": "Weekly regular-grade retail gasoline price for Los Angeles, CA. Published in EIA's Gasoline and Diesel Fuel Update.",
+  "eia_series_facet": "PET.EMM_EPMR_PTE_Y05LA_DPG.W",
+  "observation_count": 1368,
+  "date_range": {
+    "start": "2000-06-05",
+    "end": "2026-08-17"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "frequency_check": {
+    "expected_frequency": "weekly",
+    "median_gap_days": 7.0,
+    "pct_gap_le_3_days": 0.0,
+    "is_native_frequency": true
+  },
+  "raw_path": "data/raw/retail_gasoline_regular_los_angeles_weekly.json",
+  "processed_path": "data/processed/retail_gasoline_regular_los_angeles_weekly.csv"
+}

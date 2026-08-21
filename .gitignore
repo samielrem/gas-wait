@@ -1,0 +1,36 @@
+# Environment variables
+.env
+
+# Matplotlib cache
+.mplconfig/
+
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Raw and large data files
+gas_wait/data/raw/*
+!gas_wait/data/raw/.gitkeep
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.xlsx
+*.xls
+*.zip
+*.gz
+*.tar
+*.tgz

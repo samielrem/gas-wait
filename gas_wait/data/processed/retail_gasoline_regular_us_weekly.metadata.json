@@ -1,0 +1,34 @@
+{
+  "dataset_id": "retail_gasoline_regular_us_weekly",
+  "name": "U.S. Regular Gasoline Retail Price",
+  "route": "petroleum/pri/gnd/data",
+  "frequency": "weekly",
+  "facets": {
+    "product": [
+      "EPMR"
+    ],
+    "duoarea": [
+      "NUS"
+    ],
+    "process": [
+      "PTE"
+    ]
+  },
+  "geographic_area": "United States",
+  "units": "dollars per gallon",
+  "category": "retail_gasoline_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.EMM_EPMR_PTE_NUS_DPG.W",
+  "description": "Weekly U.S. retail price for regular grade gasoline. Published as part of EIA's Gasoline and Diesel Fuel Update.",
+  "observation_count": 1879,
+  "date_range": {
+    "start": "1990-08-20",
+    "end": "2026-08-17"
+  },
+  "missing_values": {
+    "value": 6,
+    "observation_date": 0
+  },
+  "raw_path": "data/raw/retail_gasoline_regular_us_weekly.json",
+  "processed_path": "data/processed/retail_gasoline_regular_us_weekly.csv"
+}

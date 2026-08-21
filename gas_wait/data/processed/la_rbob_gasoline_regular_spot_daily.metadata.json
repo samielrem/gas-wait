@@ -1,0 +1,35 @@
+{
+  "dataset_id": "la_rbob_gasoline_regular_spot_daily",
+  "name": "Los Angeles RBOB Regular Gasoline Spot Price",
+  "route": "petroleum/pri/spt/data",
+  "frequency": "daily",
+  "facets": {
+    "series": [
+      "EER_EPMRR_PF4_Y05LA_DPG"
+    ]
+  },
+  "geographic_area": "Los Angeles, CA",
+  "units": "dollars per gallon",
+  "category": "wholesale_gasoline_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.EER_EPMRR_PF4_Y05LA_DPG.D",
+  "description": "Daily Los Angeles reformulated RBOB regular gasoline spot price. West Coast wholesale benchmark.",
+  "eia_series_facet": "EER_EPMRR_PF4_Y05LA_DPG",
+  "observation_count": 5888,
+  "date_range": {
+    "start": "2003-03-11",
+    "end": "2026-08-18"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "frequency_check": {
+    "expected_frequency": "daily",
+    "median_gap_days": 1.0,
+    "pct_gap_le_3_days": 0.9712926787837608,
+    "is_native_frequency": true
+  },
+  "raw_path": "data/raw/la_rbob_gasoline_regular_spot_daily.json",
+  "processed_path": "data/processed/la_rbob_gasoline_regular_spot_daily.csv"
+}

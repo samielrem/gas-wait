@@ -1,0 +1,35 @@
+{
+  "dataset_id": "ny_harbor_gasoline_regular_spot_daily",
+  "name": "New York Harbor Conventional Gasoline Regular Spot Price",
+  "route": "petroleum/pri/spt/data",
+  "frequency": "daily",
+  "facets": {
+    "series": [
+      "EER_EPMRU_PF4_Y35NY_DPG"
+    ]
+  },
+  "geographic_area": "New York Harbor",
+  "units": "dollars per gallon",
+  "category": "wholesale_gasoline_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.EER_EPMRU_PF4_Y35NY_DPG.D",
+  "description": "Daily New York Harbor conventional regular gasoline spot price FOB. East Coast wholesale benchmark.",
+  "eia_series_facet": "EER_EPMRU_PF4_Y35NY_DPG",
+  "observation_count": 10113,
+  "date_range": {
+    "start": "1986-06-02",
+    "end": "2026-08-18"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "frequency_check": {
+    "expected_frequency": "daily",
+    "median_gap_days": 1.0,
+    "pct_gap_le_3_days": 0.9726068037974683,
+    "is_native_frequency": true
+  },
+  "raw_path": "data/raw/ny_harbor_gasoline_regular_spot_daily.json",
+  "processed_path": "data/processed/ny_harbor_gasoline_regular_spot_daily.csv"
+}

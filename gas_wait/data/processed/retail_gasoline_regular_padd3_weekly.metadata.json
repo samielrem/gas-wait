@@ -1,0 +1,41 @@
+{
+  "dataset_id": "retail_gasoline_regular_padd3_weekly",
+  "name": "Gulf Coast (PADD 3) Regular Gasoline Retail Price",
+  "route": "petroleum/pri/gnd/data",
+  "frequency": "weekly",
+  "facets": {
+    "product": [
+      "EPMR"
+    ],
+    "duoarea": [
+      "R30"
+    ],
+    "process": [
+      "PTE"
+    ]
+  },
+  "geographic_area": "PADD 3 Gulf Coast",
+  "units": "dollars per gallon",
+  "category": "retail_gasoline_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.EMM_EPMR_PTE_R30_DPG.W",
+  "description": "Weekly regular-grade retail gasoline price for PADD 3 Gulf Coast. Published in EIA's Gasoline and Diesel Fuel Update.",
+  "eia_series_facet": "PET.EMM_EPMR_PTE_R30_DPG.W",
+  "observation_count": 1789,
+  "date_range": {
+    "start": "1992-05-11",
+    "end": "2026-08-17"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "frequency_check": {
+    "expected_frequency": "weekly",
+    "median_gap_days": 7.0,
+    "pct_gap_le_3_days": 0.0,
+    "is_native_frequency": true
+  },
+  "raw_path": "data/raw/retail_gasoline_regular_padd3_weekly.json",
+  "processed_path": "data/processed/retail_gasoline_regular_padd3_weekly.csv"
+}

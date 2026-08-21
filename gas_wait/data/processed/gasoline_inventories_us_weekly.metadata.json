@@ -1,0 +1,28 @@
+{
+  "dataset_id": "gasoline_inventories_us_weekly",
+  "name": "U.S. Total Gasoline Stocks",
+  "route": "petroleum/stoc/wstk/data",
+  "frequency": "weekly",
+  "facets": {
+    "series": [
+      "WGTSTUS1"
+    ]
+  },
+  "geographic_area": "United States",
+  "units": "million barrels",
+  "category": "gasoline_inventories",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "WGTSTUS1",
+  "description": "Weekly U.S. total gasoline stocks from the Weekly Petroleum Status Report. Inventory builds can signal oversupply; draws can signal tight supply.",
+  "observation_count": 1911,
+  "date_range": {
+    "start": "1990-01-05",
+    "end": "2026-08-14"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "raw_path": "data/raw/gasoline_inventories_us_weekly.json",
+  "processed_path": "data/processed/gasoline_inventories_us_weekly.csv"
+}

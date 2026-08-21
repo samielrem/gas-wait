@@ -1,0 +1,28 @@
+{
+  "dataset_id": "wti_crude_spot_us_weekly",
+  "name": "WTI Crude Oil Spot Price",
+  "route": "petroleum/pri/spt/data",
+  "frequency": "weekly",
+  "facets": {
+    "series": [
+      "RWTC"
+    ]
+  },
+  "geographic_area": "United States (Cushing, OK)",
+  "units": "dollars per barrel",
+  "category": "crude_oil_price",
+  "source": "U.S. Energy Information Administration (EIA) API v2",
+  "legacy_series_id": "PET.RWTC.W",
+  "description": "Weekly WTI crude oil spot price. Crude costs are the largest component of retail gasoline prices.",
+  "observation_count": 2120,
+  "date_range": {
+    "start": "1986-01-03",
+    "end": "2026-08-14"
+  },
+  "missing_values": {
+    "value": 0,
+    "observation_date": 0
+  },
+  "raw_path": "data/raw/wti_crude_spot_us_weekly.json",
+  "processed_path": "data/processed/wti_crude_spot_us_weekly.csv"
+}
