@@ -6,7 +6,7 @@
   "latest_data_date": "2026-08-17",
   "model": "ridge_full",
   "prediction_date": "2026-08-18",
-  "national_weekly_disclaimer": "National weekly signal — not local station pricing.",
+  "national_weekly_disclaimer": "National weekly signal \u2014 not local station pricing.",
   "explanations": [
     "Gasoline prices are rising in the wholesale market.",
     "Gasoline is becoming more expensive before it reaches the pump."
