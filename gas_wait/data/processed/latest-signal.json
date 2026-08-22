@@ -1,0 +1,10 @@
+{
+  "signal": "FILL UP",
+  "predicted_change_dollars_per_gallon": 0.036562,
+  "predicted_change_cents_per_gallon": 3.7,
+  "horizon": "7 days",
+  "latest_data_date": "2026-08-17",
+  "model": "ridge_full",
+  "prediction_date": "2026-08-18",
+  "national_weekly_disclaimer": "National weekly signal — not local station pricing."
+}
