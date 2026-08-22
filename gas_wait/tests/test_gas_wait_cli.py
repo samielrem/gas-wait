@@ -87,6 +87,13 @@ class GasWaitCliTests(unittest.TestCase):
         self.assertEqual(payload["horizon"], "7 days")
         self.assertEqual(payload["latest_data_date"], "2026-08-17")
         self.assertEqual(payload["model"], "ridge_full")
+        self.assertEqual(
+            payload["explanations"],
+            [
+                "Recent pump prices have been moving down.",
+                "Crude oil prices have been falling.",
+            ],
+        )
 
     def test_main_json_flag(self) -> None:
         fc = _forecast(predicted=0.0366, signal="FILL UP")

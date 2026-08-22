@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 
+from modeling.consumer_explanations import to_consumer_explanations
 from modeling.inference import (
     MODEL_ID,
     MODEL_NAME,
@@ -49,6 +50,7 @@ def forecast_to_json(forecast: SignalForecast) -> dict[str, object]:
         "model": MODEL_ID,
         "prediction_date": forecast.prediction_date.strftime("%Y-%m-%d"),
         "national_weekly_disclaimer": "National weekly signal — not local station pricing.",
+        "explanations": to_consumer_explanations(forecast.explanations),
     }
     if forecast.data_warning:
         payload["data_warning"] = forecast.data_warning
