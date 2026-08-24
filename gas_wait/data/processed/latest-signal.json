@@ -10,5 +10,6 @@
   "explanations": [
     "Gasoline prices are rising in the wholesale market.",
     "Gasoline is becoming more expensive before it reaches the pump."
-  ]
+  ],
+  "data_warning": "WARNING: Latest retail print is from 2026-08-17 (7 day(s) behind the expected Monday 2026-08-24). Signal may be stale."
 }
