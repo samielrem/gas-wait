@@ -1,15 +1,15 @@
 {
   "signal": "FILL UP",
-  "predicted_change_dollars_per_gallon": 0.036562,
-  "predicted_change_cents_per_gallon": 3.7,
+  "predicted_change_dollars_per_gallon": 0.05191,
+  "predicted_change_cents_per_gallon": 5.2,
   "horizon": "7 days",
-  "latest_data_date": "2026-08-17",
+  "latest_data_date": "2026-08-24",
   "model": "ridge_full",
-  "prediction_date": "2026-08-18",
+  "prediction_date": "2026-08-25",
   "national_weekly_disclaimer": "National weekly signal \u2014 not local station pricing.",
   "explanations": [
     "Gasoline prices are rising in the wholesale market.",
-    "Gasoline is becoming more expensive before it reaches the pump."
-  ],
-  "data_warning": "WARNING: Latest retail print is from 2026-08-17 (7 day(s) behind the expected Monday 2026-08-24). Signal may be stale."
+    "Recent pump prices have been moving up.",
+    "Crude oil prices have been rising."
+  ]
 }
