@@ -11,5 +11,6 @@
     "Wholesale gasoline markets lean toward lower prices.",
     "Recent pump prices have been moving up.",
     "Supply conditions lean toward lower prices."
-  ]
+  ],
+  "data_warning": "WARNING: Latest retail print is from 2026-08-24 (7 day(s) behind the expected Monday 2026-08-31). Signal may be stale."
 }
