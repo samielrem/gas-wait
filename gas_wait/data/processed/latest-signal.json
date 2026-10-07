@@ -1,7 +1,7 @@
 {
   "signal": "WAIT",
-  "predicted_change_dollars_per_gallon": -0.100851,
-  "predicted_change_cents_per_gallon": -10.1,
+  "predicted_change_dollars_per_gallon": -0.093751,
+  "predicted_change_cents_per_gallon": -9.4,
   "horizon": "7 days",
   "latest_data_date": "2026-10-05",
   "model": "ridge_full",
