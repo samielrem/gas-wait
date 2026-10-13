@@ -10,5 +10,6 @@
   "explanations": [
     "Gasoline prices are falling in the wholesale market.",
     "Recent pump prices have been moving down."
-  ]
+  ],
+  "data_warning": "WARNING: Latest retail print is from 2026-10-05 (7 day(s) behind the expected Monday 2026-10-12). Signal may be stale."
 }
