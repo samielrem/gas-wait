@@ -1,7 +1,7 @@
 {
-  "signal": "FILL UP",
-  "predicted_change_dollars_per_gallon": 0.040493,
-  "predicted_change_cents_per_gallon": 4.0,
+  "signal": "WAIT",
+  "predicted_change_dollars_per_gallon": -0.035383,
+  "predicted_change_cents_per_gallon": -3.5,
   "horizon": "7 days",
   "latest_data_date": "2026-10-19",
   "model": "ridge_full",
@@ -9,7 +9,7 @@
   "national_weekly_disclaimer": "National weekly signal \u2014 not local station pricing.",
   "explanations": [
     "Crude oil prices have been rising.",
-    "Wholesale gasoline markets lean toward higher prices.",
+    "Gasoline prices are falling in the wholesale market.",
     "Recent pump prices have been moving down."
   ]
 }
