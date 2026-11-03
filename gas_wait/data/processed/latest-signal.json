@@ -11,5 +11,6 @@
     "Gasoline prices are falling in the wholesale market.",
     "Crude oil markets lean toward higher prices.",
     "Recent pump prices have been moving down."
-  ]
+  ],
+  "data_warning": "WARNING: Latest retail print is from 2026-10-26 (7 day(s) behind the expected Monday 2026-11-02). Signal may be stale."
 }
